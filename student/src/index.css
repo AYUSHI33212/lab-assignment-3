@@ -1,0 +1,92 @@
+/* Import Modern Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Theme Variables */
+:root {
+  --primary: #667eea;
+  --secondary: #764ba2;
+  --accent: #00c9a7;
+  --text-dark: #2d3436;
+  --text-light: #ffffff;
+  --glass: rgba(255, 255, 255, 0.1);
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--text-dark);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection Styling */
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+/* Scrollbar Styling (Modern Look) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+/* Utility Classes (Reusable) */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+}
+
+/* Button Base Style */
+button {
+  font-family: inherit;
+}
+
+/* Input Base Style */
+input {
+  font-family: inherit;
+}
+
+/* Remove number input arrows (clean UI) */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

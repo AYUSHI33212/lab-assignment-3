@@ -1,0 +1,127 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.app-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.header p {
+  opacity: 0.8;
+}
+
+/* Form */
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form input:focus {
+  box-shadow: 0 0 5px #00000050;
+}
+
+.form button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #00c9a7;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form button:hover {
+  background: #00a98f;
+  transform: scale(1.05);
+}
+
+/* Table */
+.table-container {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #333;
+  color: white;
+  padding: 12px;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #f5f5f5;
+}
+
+input[type="number"] {
+  width: 80px;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Status Styling */
+.pass {
+  background-color: #e8f8f5;
+}
+
+.fail {
+  background-color: #fdecea;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.badge.pass {
+  background: #2ecc71;
+}
+
+.badge.fail {
+  background: #e74c3c;
+}
+
+/* Hover Animation */
+tr:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
+}
